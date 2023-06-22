@@ -13,6 +13,4 @@ app.get("/test", (req, res) => res.send("its working"))
 app.get("/candy", getAllCandy);
 app.post("/candy", addNewCandy);
 
-
-
 export const api =  onRequest({ maxInstances: 10}, app);
